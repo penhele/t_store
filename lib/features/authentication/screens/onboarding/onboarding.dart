@@ -24,17 +24,17 @@ class OnboardingScreen extends StatelessWidget {
             controller: controller.pageController,
             onPageChanged: controller.updatePageIndicator,
             children: [
-              OnBoardingPage(
+              const OnBoardingPage(
                 image: TImages.onBoardingImage1,
                 title: TTexts.onBoardingTitle1,
                 subTitle: TTexts.onBoardingSubTitle1,
               ),
-              OnBoardingPage(
+              const OnBoardingPage(
                 image: TImages.onBoardingImage2,
                 title: TTexts.onBoardingTitle2,
                 subTitle: TTexts.onBoardingSubTitle2,
               ),
-              OnBoardingPage(
+              const OnBoardingPage(
                 image: TImages.onBoardingImage3,
                 title: TTexts.onBoardingTitle3,
                 subTitle: TTexts.onBoardingSubTitle3,
@@ -49,7 +49,7 @@ class OnboardingScreen extends StatelessWidget {
           const OnBoardingDotNavigation(),
 
           // Circular Button
-          OnBoardingNextWidget(),
+          const OnBoardingNextWidget(),
         ],
       ),
     );
