@@ -52,4 +52,12 @@ class TImages {
       "assets/images/on_boarding_images/sammy-line-shopping.gif";
   static const String onBoardingImage3 =
       "assets/images/on_boarding_images/sammy-line-delivery.gif";
+
+  //Banners
+  static const String promoBanner1 =
+      "assets/images/products/promo-banner-1.png";
+  static const String promoBanner2 =
+      "assets/images/products/promo-banner-2.png";
+  static const String promoBanner3 =
+      "assets/images/products/promo-banner-3.png";
 }
