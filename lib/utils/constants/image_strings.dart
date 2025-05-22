@@ -211,4 +211,7 @@ class TImages {
       "assets/images/products/promo-banner-2.png";
   static const String promoBanner3 =
       "assets/images/products/promo-banner-3.png";
+
+  //Profile
+  static const String user = "assets/images/content/user.png";
 }
