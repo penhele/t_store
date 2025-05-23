@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../common/widgets/appbar/appbar.dart';
-import '../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
-import '../../../common/widgets/list_tiles/settings_menu_tile.dart';
-import '../../../common/widgets/list_tiles/user_profile_tile.dart';
-import '../../../common/widgets/texts/section_heading.dart';
-import '../../../utils/constants/colors.dart';
-import '../../../utils/constants/sizes.dart';
+import '../../../../common/widgets/appbar/appbar.dart';
+import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
+import '../../../../common/widgets/list_tiles/settings_menu_tile.dart';
+import '../../../../common/widgets/list_tiles/user_profile_tile.dart';
+import '../../../../common/widgets/texts/section_heading.dart';
+import '../../../../utils/constants/colors.dart';
+import '../../../../utils/constants/sizes.dart';
+import '../profile/profile.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -30,7 +32,9 @@ class SettingsScreen extends StatelessWidget {
                     ),
                   ),
 
-                  TUserProfileTile(onPressed: () {}),
+                  TUserProfileTile(
+                    onPressed: () => Get.to(() => const ProfileScreen()),
+                  ),
                   const SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
