@@ -4,9 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../../utils/constants/sizes.dart';
 
 class TRatingAndShare extends StatelessWidget {
-  const TRatingAndShare({
-    super.key,
-  });
+  const TRatingAndShare({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +13,7 @@ class TRatingAndShare extends StatelessWidget {
       children: [
         Row(
           children: [
-            const Icon(Iconsax.star5,
-                color: Colors.amber, size: 24),
+            const Icon(Iconsax.star5, color: Colors.amber, size: 24),
             const SizedBox(width: TSizes.spaceBtwItems / 2),
             Text.rich(
               TextSpan(

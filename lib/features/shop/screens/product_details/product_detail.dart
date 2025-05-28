@@ -22,13 +22,7 @@ class ProductDetailScreen extends StatelessWidget {
                 left: TSizes.defaultSpace,
                 bottom: TSizes.defaultSpace,
               ),
-              child: Column(
-                children: [
-                  TRatingAndShare(),
-
-                  TProductMetaData(),
-                ],
-              ),
+              child: Column(children: [TRatingAndShare(), TProductMetaData()]),
             ),
           ],
         ),
