@@ -27,6 +27,9 @@ dependencies:
   # State Management
   get: ^4.7.2
   get_storage: ^2.1.1
+
+  # Product Specific
+  readmore: ^3.0.0
   carousel_slider: ^5.0.0
 
 #--------------- ./ PACKAGES END ------------------#
