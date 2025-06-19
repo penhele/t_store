@@ -42,7 +42,6 @@ class HomeScreen extends StatelessWidget {
                           showActionButton: false,
                           textColor: TColors.white,
                         ),
-
                         SizedBox(height: TSizes.spaceBtwItems),
 
                         THomeCategories(),
