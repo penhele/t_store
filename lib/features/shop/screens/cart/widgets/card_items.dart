@@ -6,33 +6,37 @@ import '../../../../../common/widgets/texts/product_price_text.dart';
 import '../../../../../utils/constants/sizes.dart';
 
 class TCartItems extends StatelessWidget {
-  const TCartItems({super.key});
+  const TCartItems({super.key, this.showAddRemoveButton = true});
+
+  final bool showAddRemoveButton;
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
       shrinkWrap: true,
       itemBuilder:
-          (_, index) => const Column(
+          (_, index) => Column(
             children: [
-              TCartItem(),
-              SizedBox(height: TSizes.spaceBtwItems),
+              const TCartItem(),
+              if (showAddRemoveButton)
+                const SizedBox(height: TSizes.spaceBtwItems),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      SizedBox(width: 70),
-                      TProductQuantityWithAddRemoveButton(),
-                    ],
-                  ),
-                  TProductPriceText(price: '256'),
-                ],
-              ),
+              if (showAddRemoveButton)
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        SizedBox(width: 70),
+                        TProductQuantityWithAddRemoveButton(),
+                      ],
+                    ),
+                    TProductPriceText(price: '256'),
+                  ],
+                ),
             ],
           ),
-      itemCount: 10,
+      itemCount: 2,
       separatorBuilder:
           (_, __) => const SizedBox(height: TSizes.spaceBtwSections),
     );
