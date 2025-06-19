@@ -71,8 +71,14 @@ class UserReviewCart extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("T's Store", style: Theme.of(context).textTheme.titleMedium),
-                    Text("02 Nov, 2023", style: Theme.of(context).textTheme.bodyMedium),
+                    Text(
+                      "T's Store",
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      "02 Nov, 2023",
+                      style: Theme.of(context).textTheme.bodyMedium,
+                    ),
                   ],
                 ),
                 const SizedBox(height: TSizes.spaceBtwItems),
@@ -83,17 +89,19 @@ class UserReviewCart extends StatelessWidget {
                   trimExpandedText: ' show less',
                   trimCollapsedText: ' show more',
                   moreStyle: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: TColors.primary),
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: TColors.primary,
+                  ),
                   lessStyle: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: TColors.primary),
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: TColors.primary,
+                  ),
                 ),
               ],
             ),
-          )
+          ),
         ),
         const SizedBox(height: TSizes.spaceBtwItems),
       ],

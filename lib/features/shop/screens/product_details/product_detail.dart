@@ -80,7 +80,8 @@ class ProductDetailScreen extends StatelessWidget {
                       ),
                       IconButton(
                         icon: const Icon(Iconsax.arrow_right_3, size: 18),
-                        onPressed: () => Get.to(() => const ProductReviewsScreen()),
+                        onPressed:
+                            () => Get.to(() => const ProductReviewsScreen()),
                       ),
                     ],
                   ),
