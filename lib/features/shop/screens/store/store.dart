@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/appbar/tabbar.dart';
@@ -10,6 +11,7 @@ import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/helpers/helper_functions.dart';
+import '../brand/all_brands.dart';
 import 'widgets/category_tab.dart';
 
 class StoreScreen extends StatelessWidget {
@@ -55,7 +57,7 @@ class StoreScreen extends StatelessWidget {
 
                       TSectionHeading(
                         title: 'Featured Brands',
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => const AllBrandsScreen()),
                       ),
                       const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
