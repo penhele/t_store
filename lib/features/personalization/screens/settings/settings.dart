@@ -9,6 +9,7 @@ import '../../../../common/widgets/list_tiles/user_profile_tile.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
+import '../address/address.dart';
 import '../profile/profile.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -53,8 +54,8 @@ class SettingsScreen extends StatelessWidget {
                   TSettingsMenuTile(
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
-                    subTitle: 'Set shopping addresses',
-                    onTap: () {},
+                    subTitle: 'Set shopping delivery addresses',
+                    onTap: () => Get.to(() => const UserAddressScreen()),
                   ),
                   const TSettingsMenuTile(
                     icon: Iconsax.shopping_cart,
